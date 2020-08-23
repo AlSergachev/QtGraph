@@ -14,7 +14,7 @@ public:
 private:
     Ui::QtGraphClass ui;
     int x1, x2, y1, y2;
-    QGraphicsScene* scene = new QGraphicsScene(ui.graphicsView);
+    QGraphicsScene* scene = new QGraphicsScene;
     void SceneClear();
 
 public slots:

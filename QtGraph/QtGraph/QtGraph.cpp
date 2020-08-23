@@ -4,6 +4,7 @@ QtGraph::QtGraph(QWidget* parent)
     : QMainWindow(parent)
 {
     ui.setupUi(this);
+    ui.graphicsView->setScene(scene);
     ui.graphicsView->rotate(270);
     SceneClear();
     connect(ui.pushButton_show, SIGNAL(clicked()), this, SLOT(pushButton_show_clicked));
