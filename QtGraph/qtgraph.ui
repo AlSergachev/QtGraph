@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>QtGraphClass</class>
- <widget class="QMainWindow" name="QtGraphClass">
+ <class>QtGraph</class>
+ <widget class="QMainWindow" name="QtGraph">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -385,14 +385,12 @@
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources>
-  <include location="QtGraph.qrc"/>
- </resources>
+ <resources/>
  <connections>
   <connection>
    <sender>pushButton_show</sender>
    <signal>clicked()</signal>
-   <receiver>QtGraphClass</receiver>
+   <receiver>QtGraph</receiver>
    <slot>pushButton_show_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -408,7 +406,7 @@
   <connection>
    <sender>pushButton_clear</sender>
    <signal>clicked()</signal>
-   <receiver>QtGraphClass</receiver>
+   <receiver>QtGraph</receiver>
    <slot>pushButton_clear_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -424,7 +422,7 @@
   <connection>
    <sender>horizontalSlider</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>QtGraphClass</receiver>
+   <receiver>QtGraph</receiver>
    <slot>sl_update()</slot>
    <hints>
     <hint type="sourcelabel">
